@@ -120,8 +120,8 @@ public class EmptyDataSetView: UIView {
     internal var verticalOffset: CGFloat = 0
     internal var verticalSpace: CGFloat = 11
     
-    internal var didTapContentViewHandle: (() -> Void)?
-    internal var didTapDataButtonHandle: (() -> Void)?
+    internal var didTapContentViewHandle: (() -> ())?
+    internal var didTapDataButtonHandle: (() -> ())?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
